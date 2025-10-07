@@ -10,7 +10,7 @@ TASKS_FILE = 'tasks.json'
 # Returns f which is a list of tasks, or empty list if no file found.
 def load_tasks(): 
     if os.path.exists(TASKS_FILE):
-        with open(TASKS_FILE, 'r') as f: # loads tasks into 'f' list object
+        with open(TASKS_FILE, 'r') as f: # loads tasks into 'f' file object
             return json.load(f)
     return []
 
